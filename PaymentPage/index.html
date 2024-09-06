@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secure Payment Gateway</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon"> <!-- {{ edit_1 }} -->
+    <link href="custom-styles.css" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <h2>Finalize Your Transaction</h2> <!-- {{ edit_2 }} -->
+        <form method="POST">
+            <h4>User Information</h4>
+            <div class="input-group">
+                <div class="input-box">
+                    <input type="text" placeholder="Your Full Name" required class="name" aria-label="Full Name"> <!-- {{ edit_3 }} -->
+                    <i class="fa fa-user icon"></i>
+                </div>
+                <div class="input-box">
+                    <input type="text" placeholder="Preferred Name" required class="name" aria-label="Preferred Name">
+                    <i class="fa fa-user icon"></i>
+                </div>
+            </div>
+            <div class="input-group">
+                <div class="input-box">
+                    <input type="email" placeholder="Your Email Address" required class="name" aria-label="Email Address"> <!-- {{ edit_4 }} -->
+                    <i class="fa fa-envelope icon"></i>
+                </div>
+            </div>
+            <div class="input-group">
+                <div class="input-box">
+                    <h4>Date of Birth</h4>
+                    <input type="text" placeholder="DD" class="dob">
+                    <input type="text" placeholder="MM" class="dob">
+                    <input type="text" placeholder="YYYY" class="dob">
+                </div>
+                <div class="input-box">
+                    <h4>Gender</h4>
+                    <input type="radio" id="male" name="gender" checked class="radio">
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="gender" class="radio">
+                    <label for="female">Female</label>
+                </div>
+            </div>
+            <div class="input-group">
+                <div class="input-box">
+                    <h4>Payment Method</h4>
+                    <input type="radio" name="payment" id="credit" checked class="radio">
+                    <label for="credit"><span><i class="fa fa-cc-visa"></i> Credit Card</span></label>
+                    <input type="radio" name="payment" id="paypal" class="radio">
+                    <label for="paypal"><span><i class="fa fa-cc-paypal"></i> PayPal</span></label>
+                </div>
+            </div>
+            <div class="input-group">
+                <div class="input-box">
+                    <input type="tel" placeholder="Enter Card Number" required class="name">
+                    <i class="fa fa-credit-card icon"></i>
+                </div>
+            </div>
+            <div class="input-group">
+                <div class="input-box">
+                    <input type="tel" placeholder="CVC" required class="name">
+                    <i class="fa fa-lock icon"></i>
+                </div>
+                <div class="input-box">
+                    <select>
+                        <option>01 Jan</option>
+                        <option>02 Feb</option>
+                        <option>03 Mar</option>
+                    </select>
+                    <select>
+                        <option>2023</option>
+                        <option>2024</option>
+                        <option>2025</option>
+                    </select>
+                </div>
+            </div>
+            <div class="input-group">
+                <div class="input-box">
+                    <button type="submit" onclick="window.open('https://yourdomain.com/ErrorPage/index.html','_self','resizable=yes')">Proceed to Payment</button> <!-- {{ edit_5 }} -->
+                </div>
+            </div>
+        </form>
+        <footer>
+            <a href="privacy-policy.html">Privacy Policy</a> 
+        </footer>
+    </div>
+</body>
+
+</html>
